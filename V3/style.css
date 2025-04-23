@@ -1,0 +1,33 @@
+body {
+    background: linear-gradient(135deg, #ff6e7f, #bfe9ff);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn-primary {
+    background-color: #ff6e7f;
+    border-color: #ff6e7f;
+    margin: auto;
+    padding: auto;
+  }
+  
+  .btn-primary:hover {
+    background-color: #e65a6b;
+    border-color: #e65a6b;
+  }
+  
+  h1 {
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  label {
+    font-weight: bold;
+    color: #333;
+  }

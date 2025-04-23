@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Vendas de Dindin</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center mb-4 animate__animated animate__fadeInDown">Cadastro de Vendas de Dindin</h1>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card shadow p-4 animate__animated animate__fadeIn">
+          <form id="vendaForm">
+            <div class="form-group">
+              <label for="nomeCliente">Nome do Cliente:</label>
+              <input type="text" id="nomeCliente" name="nomeCliente" class="form-control" required>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="valor">Valor:</label>
+                <input type="number" id="valor" name="valor" class="form-control" required>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="quantidade">Quantidade:</label>
+                <input type="number" id="quantidade" name="quantidade" class="form-control" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="sabor">Sabor:</label>
+              <select id="sabor" name="sabor" class="form-control" required>
+                <option value="morango">Morango</option>
+                <option value="chocolate">Chocolate</option>
+                <option value="coco">Coco</option>
+                <option value="maracuja">Maracujá</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="pagamento">Pagamento:</label>
+              <select id="pagamento" name="pagamento" class="form-control" required>
+                <option value="dinheiro">Dinheiro</option>
+                <option value="cartao">Cartão</option>
+                <option value="pix">Pix</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" name="hora" class="form-control" required>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="data">Data:</label>
+                <input type="date" id="data" name="data" class="form-control" required>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Cadastrar Venda</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
